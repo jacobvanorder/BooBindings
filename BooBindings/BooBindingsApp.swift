@@ -13,7 +13,7 @@ struct BooBindingsApp: App {
         WindowGroup {
             TabView {
                 Tab("Synthesized Binding", systemImage: "questionmark.square") {
-                    SynthesizedBindingView()                    
+                    SynthesizedBindingView()
                 }
                 Tab("View Model Based", systemImage: "questionmark.circle") {
                     ViewModelDrivingView()
