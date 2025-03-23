@@ -1,0 +1,24 @@
+//
+//  BooBindingsApp.swift
+//  BooBindings
+//
+//  Created by Jacob Van Order on 3/22/25.
+//
+
+import SwiftUI
+
+@main
+struct BooBindingsApp: App {
+    var body: some Scene {
+        WindowGroup {
+            TabView {
+                Tab("Synthesized Binding", systemImage: "questionmark.square.dashed") {
+                    SynthesizedBindingView()                    
+                }
+                Tab("View Model Based", systemImage: "questionmark.circle.dashed") {
+                    ViewModelDrivingView()
+                }
+            }
+        }
+    }
+}
