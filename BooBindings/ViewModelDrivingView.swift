@@ -16,7 +16,7 @@ struct ViewModelDrivingView: View {
             Button {
                 viewModel.thingYouMightWantToShowAnAlertFor = .init(name: "You know!", description: "That thing you might want to show an sheet for")
             } label: {
-                Text("Show that sheet")
+                Text("Show that alert")
             }
         }
         .padding()

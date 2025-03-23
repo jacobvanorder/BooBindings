@@ -12,6 +12,9 @@ struct BooBindingsApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
+                Tab("View Logic Based", systemImage: "questionmark.bubble") {
+                    ViewLogicBindingView()
+                }
                 Tab("Synthesized Binding", systemImage: "questionmark.square") {
                     SynthesizedBindingView()
                 }
