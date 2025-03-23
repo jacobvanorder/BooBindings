@@ -12,11 +12,14 @@ struct BooBindingsApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
-                Tab("Synthesized Binding", systemImage: "questionmark.square.dashed") {
+                Tab("Synthesized Binding", systemImage: "questionmark.square") {
                     SynthesizedBindingView()                    
                 }
-                Tab("View Model Based", systemImage: "questionmark.circle.dashed") {
+                Tab("View Model Based", systemImage: "questionmark.circle") {
                     ViewModelDrivingView()
+                }
+                Tab("Side Effect Based", systemImage: "questionmark.diamond") {
+                    SideEffectView()
                 }
             }
         }
